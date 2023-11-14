@@ -2,9 +2,10 @@ public class CongeladoPorAire extends ProductoCongelado {
     private String composicionAire;
 
     // Constructor sin argumentos
+// Constructor sin argumentos
     public CongeladoPorAire() {
-        super("", "", 0.0); // Puedes poner valores predeterminados aquí si lo deseas
-        this.composicionAire = "";
+        super("FechaCaducidadPredeterminada", "NumeroLotePredeterminado", -18.0);
+        this.composicionAire = "ComposicionAireNoEspecificada";
     }
 
     public CongeladoPorAire(String fechaCaducidad, String numeroLote, double temperaturaMantenimientoRecomendada, String composicionAire) {
@@ -21,11 +22,12 @@ public class CongeladoPorAire extends ProductoCongelado {
 
     @Override
     public String toString() {
-        return "CongeladoPorAire{" +
-                "composicionAire='" + composicionAire + '\'' +
-                ", fechaCaducidad='" + getFechaCaducidad() + '\'' +
-                ", numeroLote='" + getNumeroLote() + '\'' +
-                ", temperaturaMantenimientoRecomendada=" + getTemperaturaMantenimientoRecomendada() +
-                '}';
+        return "Congelado Por Aire:\n\n" +
+               "CongeladoPorAire{" +
+               "composicionAire='" + composicionAire + '\'' +
+               ", fechaCaducidad='" + getFechaCaducidad() + '\'' +
+               ", numeroLote='" + getNumeroLote() + '\'' +
+               ", temperaturaMantenimientoRecomendada=" + getTemperaturaMantenimientoRecomendada() +
+               "}\n";
     }
 }
